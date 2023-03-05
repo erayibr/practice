@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body style="color:white; background-color:black">
+<pre>
+<span style="color:red;">
+-----------------------------------
+------------ dns query ------------
+-----------------------------------
+./dns_query google.com
+IPV4 address: 172.217.169.142
+IPV6 address: 2a00:1450:4017:80d::200e
+</span><span style="color:yellow;">
+-----------------------------------
+----------- listen 5555 -----------
+-----------------------------------
+./listen_sock 5555 &amp;
+sleep 1
+echo &quot;Echoing this msg to test listen_sock&quot; &gt; /dev/tcp/localhost/5555
+Client connected!
+Echoing this msg to test listen_sock
+
+</span>
+</pre>
+</body>
+</html>

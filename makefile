@@ -33,3 +33,6 @@ demo: all
 	echo "Echoing this msg to test listen_sock" > /dev/tcp/localhost/5555
 	@echo ""
 
+demo_save:
+	make demo --no-print-directory | aha --black > demo.html
+
